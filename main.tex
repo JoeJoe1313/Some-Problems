@@ -148,6 +148,32 @@ $e)$ tbd
 За $\lambda_4$ ще използваме факта (might explain it later), че $tr(A) = \lambda_1 + \lambda_2 + \lambda_3 + \lambda_4$, откъдето получаваме $\lambda_4 = \alpha + 3$.
 
 \justify
+Сега по условие $x_1 = x_2$, т.е. $x_1 = x_ 2 = \alpha + 3$, $x_3 < x_4$, т.е. $x_3 = \alpha - 7, x_4 = \alpha + 1$ и $x_1 + x_2 + x_3 = 2x_4$, което е еквивалентно на $\alpha + 3 + \alpha + 3 + \alpha - 7 = 2\alpha + 2$. От тук получаваме, че $\alpha = 3$ и матрицата $A$ има вида
+
+\begin{center}
+    A = $\begin{pmatrix}
+         3 & 2 & -2 & 3 \\
+         2 & 3 & 3 & -2 \\
+         -2 & 3 & 3 & 2 \\
+         3 & -2 & 2 & 3
+         \end{pmatrix}.$
+\end{center}
+
+\justify
+Трябва да намерим собствения вектор, съответстващ на $\lambda_4 = 6$, който да е ортогонален с останалите собствени вектори. За целта трябва да решим системата 
+
+\begin{center}
+    $Av_4 = \lambda_4 v_4$, \\
+    $(A - E\lambda_4)v_4 = 0,$ \\
+    $\begin{pmatrix}
+         -3 & 2 & -2 & 3 \\
+         2 & -3 & 3 & -2 \\
+         -2 & 3 & -3 & 2 \\
+         3 & -2 & 2 & -3
+         \end{pmatrix} v_4 = 0$
+\end{center}
+
+\justify
 Let $A$ be a matrix.  It has a Jordan Canonical Form, i.e. there is matrix $P$ such that $PAP^{-1}$ is in Jordan form.  Among other things, Jordan form is upper triangular, hence it has its eigenvalues on its diagonal.  It is therefore clear for a matrix in Jordan form that its trace equals the sum of its eigenvalues.  All that remains is to prove that if $B,C$ are similar then they have the same eigenvalues.
 
 \end{document}
